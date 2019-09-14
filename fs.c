@@ -1000,7 +1000,7 @@ int dir_remove(char *name)
                 superBlock.freeInodeCount++;
 
                 //  Change blockMap to 0 and increase block count
-                set_bit(blockMap, inode[directoryInodeNum].directBlock[i], 0);
+                set_bit(blockMap, inode[directoryInodeNum].directBlock[j], 0);
                 superBlock.freeBlockCount++;
 
                 //  Decrement the number of numEntries for directory
